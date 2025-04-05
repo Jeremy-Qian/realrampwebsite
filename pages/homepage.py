@@ -1,5 +1,6 @@
 import streamlit as st
 from pathlib import Path
+import base64
 
 st.set_page_config(page_title="Home", page_icon="🏠", layout="wide")
 
@@ -8,18 +9,30 @@ banner_path = Path(__file__).parent.parent / "banner.gif"
 
 # 顶部横幅
 try:
-    st.image(str(banner_path), use_container_width=True)
+    file_ = open(banner_path, "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+    st.markdown(
+        f'<img src="data:image/gif;base64,{data_url}" alt="Banner Image">',
+        unsafe_allow_html=True,
+    )
 except FileNotFoundError:
     st.error("Banner image not found at: " + str(banner_path))
-st.markdown("[Contact Us](https://contactus.streamlit.app)")
 
+st.markdown("""
+<style>
+    .stToolbarActionButton {
+        visibility: hidden;
+    }
+""")
 # 主内容区域
 col1, col2 = st.columns([0.74, 0.24])
 
 with col1:
     # 内容区域
     with st.container():
-        st.markdown("### Content Area")
+        st.markdown("### Content")
         st.write("Hello")
         st.markdown("""
         <style>
