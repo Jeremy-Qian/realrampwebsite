@@ -1,9 +1,16 @@
 import streamlit as st
+from pathlib import Path
 
 st.set_page_config(page_title="Home", page_icon="🏠", layout="wide")
 
+# Get absolute path for the banner image
+banner_path = Path(__file__).parent.parent / "banner.gif"
+
 # 顶部横幅
-st.image("../banner.gif", use_column_width=True)
+try:
+    st.image(str(banner_path), use_container_width=True)
+except FileNotFoundError:
+    st.error("Banner image not found at: " + str(banner_path))
 st.markdown("[Contact Us](https://contactus.streamlit.app)")
 
 # 主内容区域
