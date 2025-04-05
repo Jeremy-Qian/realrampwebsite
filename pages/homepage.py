@@ -85,4 +85,4 @@ html_content = """
 </html>
 """
 
-components.html(html_content)
+components.html(html_content,scrolling=True,width=1000)
