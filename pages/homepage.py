@@ -1,6 +1,5 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import requests
 
 st.set_page_config(page_title="Home", page_icon="🏠", layout="wide")
 
@@ -86,4 +85,4 @@ html_content = """
 </html>
 """
 
-components.html(html_content, scrolling=True)
+components.html(html_content)
