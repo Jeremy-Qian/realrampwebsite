@@ -25,7 +25,8 @@ st.markdown("""
     .stToolbarActionButton {
         visibility: hidden;
     }
-""")
+</style>
+""", unsafe_allow_html=True)
 # 主内容区域
 col1, col2 = st.columns([0.74, 0.24])
 
