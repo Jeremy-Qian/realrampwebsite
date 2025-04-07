@@ -67,6 +67,12 @@ with col2:
             border-radius: 5px;
             padding: 20px;
         }
+        section[data-testid="stSidebar"]  {
+            background-color: #FFFFEC;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 20px;
+        }
         </style>
         """, unsafe_allow_html=True)
 # 地图区域
