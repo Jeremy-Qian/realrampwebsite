@@ -7,6 +7,8 @@ st.set_page_config(page_title="Home", page_icon="material/home", layout="wide", 
 
 # Get absolute path for the banner image
 banner_path = Path(__file__).parent.parent / "banner.gif"
+# Get absolute path for the map image
+map_path = Path(__file__).parent.parent / "rampmap.jpg"
 
 # 顶部横幅
 try:
@@ -78,4 +80,4 @@ with col2:
 # 地图区域
 with st.container():
     st.markdown("### Ramp Map")
-    st.image(banner_path)
+    st.image(map_path)
