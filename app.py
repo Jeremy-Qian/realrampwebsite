@@ -5,7 +5,7 @@ pages = {
         st.Page("pages/homepage.py", title="Home"),
     ],
     "Shop": [
-        st.Page("pages/bookshop.py", title="Home"),
+        st.Page("pages/bookshop.py", title="Home",default=True),
     ]
 }
 
