@@ -40,4 +40,22 @@ if st.checkbox("显示管理员面板"):
             st.write(f"- {purchase['title']} (¥{purchase['price']})")
     else:
         st.write("暂无购买记录")
-
+st.markdown("""
+        <style>
+        div[data-testid="stAppViewContainer"] {
+            background-color: #FFFFEC;
+            padding: 20px;
+        }
+        div[data-testid="stHeader"]  {
+            background-color: #FFFFEC;
+            border: 2px solid #000
+            padding: 20px;
+        }
+        section[data-testid="stSidebar"]  {
+            background-color: #FFFFEC;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        </style>
+        """, unsafe_allow_html=True)
