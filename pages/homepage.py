@@ -17,7 +17,11 @@ try:
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()
     st.markdown(
-        f'<img src="data:image/gif;base64,{data_url}" alt="Banner Image">',
+        f"""
+        <div style="width: 100%; margin: 0; padding: 0;">
+            <img src="data:image/gif;base64,{data_url}" alt="Banner Image" style="width: 100%;">
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 except FileNotFoundError:
