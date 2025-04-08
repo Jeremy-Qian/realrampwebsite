@@ -59,7 +59,6 @@ with col2:
         <style>
         div[data-testid="stAppViewContainer"] {
             background-color: #FFFFEC;
-            border: 2px solid #000;
             border-radius: 5px;
             padding: 20px;
         }
