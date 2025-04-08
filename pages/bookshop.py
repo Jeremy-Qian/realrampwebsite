@@ -1,6 +1,4 @@
 import streamlit as st
-from git import Repo
-import os
 
 st.title("Bookshop")
 
@@ -24,16 +22,15 @@ for book in books:
     with col2:
         st.write(f"¥{book['price']}")
     with col3:
-        import streamlit as st
-        from sqlalchemy import create_engine
-        
-        # 初始化连接
-        conn = st.connection("postgresql", type="sql")
-        
-        # 购买操作
         if st.button(f"购买", key=f"buy_{book['id']}"):
             st.session_state.purchases.append(book)
             st.success(f"已添加 {book['title']} 到购物车!")
+
+# 购物车显示
+if st.session_state.purchases:
+    st.header("您的购物车")
+    for item in st.session_state.purchases:
+        st.write(f"- {item['title']} (¥{item['price']})")
 
 # 管理员视图
 if st.checkbox("显示管理员面板"):
