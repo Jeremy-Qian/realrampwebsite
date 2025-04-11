@@ -48,8 +48,8 @@ with col1:
                 "card": {
                     "border": "2px solid #000",
                     "border-radius": "5px",
-                    "padding": "20px",
-                    "height": "300px!important",
+                    "padding": "5px",
+                    "height": "20px!important",
                     "background-color": "#FFFFEC",
                 },
                 "title": {"font-size": "24px", "font-weight": "bold"},
