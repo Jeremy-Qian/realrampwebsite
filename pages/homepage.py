@@ -44,6 +44,17 @@ with col1:
         card(
             title="Bookshop",
             text="Explore our bookshop and find the perfect books for your reading needs.",
+            styles={
+                "card": {
+                    "border": "2px solid #000",
+                    "border-radius": "5px",
+                    "padding": "20px",
+                    "height": "300px!important",
+                    "background-color": "#FFFFEC",
+                },
+                "title": {"font-size": "24px", "font-weight": "bold"},
+                "text": {"font-size": "16px"},
+            }
         )
         st.markdown("""
         <style>
