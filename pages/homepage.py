@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_card import card
 from pathlib import Path
 import base64
 
@@ -39,8 +40,11 @@ col1, col2 = st.columns([0.74, 0.24])
 
 with col1:
     with st.container():
-        st.markdown("### Content")
-        st.write("Hello")
+        st.markdown("### Trending")
+        card(
+            title="Bookshop",
+            text="Explore our bookshop and find the perfect books for your reading needs.",
+        )
         st.markdown("""
         <style>
         div[data-testid="stColumn"] {
