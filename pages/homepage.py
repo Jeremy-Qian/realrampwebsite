@@ -46,14 +46,16 @@ with col1:
             text="Explore our bookshop and find the perfect books for your reading needs.",
             styles={
                 "card": {
-                    "border": "2px solid #000",
-                    "border-radius": "5px",
+                    "border-radius": "15px",
                     "padding": "5px",
-                    "height": "20px!important",
+                    "height": "100px!important",
                     "background-color": "#FFFFEC",
                 },
                 "title": {"font-size": "24px", "font-weight": "bold"},
                 "text": {"font-size": "16px"},
+                "fitler": {
+                    "background-color": "#FFFFEC",
+                }
             }
         )
         st.markdown("""
