@@ -47,9 +47,10 @@ with col1:
             styles={
                 "card": {
                     "border-radius": "15px",
+                    "width": "100%",
                     "padding": "5px",
                     "margin": "5px",
-                    "height": "100px!important",
+                    "height": "100%!important",
                     "background-color": "#FFFFEC",
                 },
                 "title": {"font-size": "24px", "font-weight": "bold"},
