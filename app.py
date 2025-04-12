@@ -1,11 +1,11 @@
 import streamlit as st
 
 pages = {
-    "Resources": [
-        st.Page("pages/homepage.py", title="Home"),
+    "Home": [
+        st.Page("pages/homepage.py", title="Home", icon="material/home"),
     ],
     "Shop": [
-        st.Page("pages/bookshop.py", title="Bookshop"),
+        st.Page("pages/bookshop.py", title="Bookshop", icon="material/book"),
     ]
 }
 
