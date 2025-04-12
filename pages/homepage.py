@@ -48,7 +48,7 @@ with col1:
         card(
             title="Bookshop",
             text="Explore our bookshop and find the perfect books for your reading needs.",
-            on_click=lambda e: st.switch_page("pages/bookshop.py"),
+            on_click=lambda *e: st.switch_page("pages/bookshop.py"),
             styles={
                 "card": {
                     "border-radius": "15px",
