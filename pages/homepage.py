@@ -50,7 +50,7 @@ with col1:
                     "width": "100%",
                     "padding": "5px",
                     "margin": "5px",
-                    "height": "200px!important",
+                    "height": "150px!important",
                     "background-color": "#FFFFEC",
                 },
                 "title": {"font-size": "24px", "font-weight": "bold"},
